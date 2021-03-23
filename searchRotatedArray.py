@@ -12,7 +12,7 @@ def binary_search_rotated(arr, key):
     if low>high:
       return -1
    
-    middle = int(high/2)
+    middle = low + int((high-low)/2)
 
     if arr[low]==key:
         return low
